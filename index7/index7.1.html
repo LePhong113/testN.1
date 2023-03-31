@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index7.1</title>
+    
+  </head>
+  <body>
+    <script>
+        function handleSum() {
+          var number1 = document.getElementById("number1_id").value;
+          var number2 = document.getElementById("number2_id").value;
+  
+  
+          var sum = Number(number1) + Number(number2);
+  
+  
+          console.log("Sum: " + sum);
+          console.log(number1);
+          document.getElementById("sum_id").value = sum;
+        }
+      </script>
+  </body>
+    <body>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <label for="">Số 1: </label>
+                <input type="number" class="form-control" id="number1_id" />
+                <br />
+                <label for="">Số 2: </label>
+                <input type="number" class="form-control" id="number2_id" />
+                <br />
+                <br />
+                <label for="">Kết quả: </label>
+                <br />
+                <button type="button" class="btn btn-primary" onclick="handleSum()">Tổng 2 số</button>
+                <input type="text" class="form-control" id="sum_id" />
+                <p></p>
+              </div>
+            </div>
+          </div>
+    
+  </body>

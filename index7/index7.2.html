@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex</title>
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+    <script>
+    function handleRiderect() {
+        var choice = prompt("Mời bạn chọn: ", 1);
+
+
+        switch (choice) {
+          case "1":
+            window.open("https://vtiacademy.edu.vn/");
+            break;
+          case "2":
+            window.open("https://www.w3schools.com/");
+            break;
+          case "3":
+            window.open("http://google.com/");
+            break;
+          case "4":
+            window.open("https://dantri.com.vn/");
+            break;
+          default:
+            window.open("https://vtiacademy.edu.vn/");
+        }
+      }
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <h3>Mời bạn chọn trang web muốn chuyển đến</h3>
+          <ol>
+            <li>VTI Academy</li>
+            <li>w3schools/</li>
+            <li>google</li>
+            <li>dantri</li>
+          </ol>
+          <button type="button" class="btn btn-primary" onclick="handleRiderect()">Choice</button>
+        </div>
+      </div>
+    </div>

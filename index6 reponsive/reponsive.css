@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container div{
+    background-color: orangered;
+    float:left;
+    display: block;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    height: 50px;
+    font-size: 17px;
+}
+.container div:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .container div{
+        float: left;
+        display: block;
+        width: 100%;
+        text-align:left;
+    }
+    .image img{
+        float:left;
+        display: block;
+        width: 45%;
+    }
+}
+.footer{
+    clear: both;
+    background-color: gray;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.image img{
+    display: block;
+    float: left;
+}

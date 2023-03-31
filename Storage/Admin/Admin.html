@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="End">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <li class="active">
+        <a href="../Home/Home.html">Home</a>
+      </li>
+      <li>
+        <a href="../Admin/Admin.html">Admin</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#" style="padding-right: 20px"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+      </li>
+    </ul>
+     </div>
+    <div class="MenuSection">
+      <div class="SideBarSection">
+        <div class="sidebar">
+          <!-- Danh mục quản lý -->
+          <div>
+            <h4 style="font-weight: bold">Danh mục</h4>
+            <ul class="secsion">
+              <li class="list-group-item">
+                <button type="button" class="btnClass" onclick="Manufacturer()">Manufacturer</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass" onclick="Category()">Category</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass" onclick="Product()">Product</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass" onclick="Account()">Account</button>
+              </li>
+            </ul>
+          </div>
+            <!-- Filter theo manufacturers -->
+           <div>
+            <h4 style="font-weight: bold">Manufacturers</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <button type="button" class="btnClass">SAMSUNG</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass">APPLE</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass">XIAOMI</button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btnClass">OPPO</button>
+              </li>
+            </ul>
+           </div>
+            <!-- Filter theo categorys -->
+            <div class="panel panel-default">
+              <h4 style="font-weight: bold">Categorys</h4>
+              <div class="panel-body">
+                <select class="form-control">
+                  <option value="">-- Select Category --</option>
+                  <option value="1">Điện thoại</option>
+                  <option value="2">Tablet</option>
+                  <option value="3">Laptop</option>
+                </select>
+                <br />
+                <button type="button" class="btn btn-default">Fillter</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      <div class="ProductAdminSection">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./Admin.js"></script>
+
+
+</body>
+
+</html>

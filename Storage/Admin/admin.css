@@ -1,0 +1,13 @@
+.menu {
+  background-color: rgb(160, 187, 227);
+  font-size: 19px;
+  font-weight: bold;
+}
+.MenuSection{
+  display: grid;
+  grid-template-columns: 200px  1fr;
+}
+.sidebar{
+width: 150px;
+height: 100%;
+}

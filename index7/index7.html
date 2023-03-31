@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link ="stylesheet" href="index7.css" ></ref>
+    <title>Index7</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label>your name</label>
+      <input type="text" class="form-control" id="name_id">
+      </div>
+      <label>your age</label>
+      <input type="text" class="form-control" id="age_id"> <br>
+      <label>your gender</label>
+      <input type="text" class="form-control" id="gender_id"> <br>
+      <label>your address</label>
+      <input type="text" class="form-control" id="ad_id"> <br>
+      <label>your classroom</label>
+      <input type="text" class="form-control" id="class_id"> <br>
+      <button type="button" onclick="write()">click me</button><br>
+    
+      <label >person</label>
+      <input type="text" class="form-control" id="person_id">
+    </div>
+
+
+
+    <script>
+       function write() {
+      // Khai báo biến để lưu thông tin
+      let yourname, age, gender, address, classroom, person;
+      //   Cho người dùng nhập liệu thông tin học viên
+      yourname = document.getElementById("name_id").value;
+      age = document.getElementById("age_id").value;
+      gender = document.getElementById("gender_id").value;
+      address = document.getElementById("ad_id").value;
+      classroom = document.getElementById("class_id").value;
+      person = text(yourname)+text(age);    
+      document.getElementById("person_id").value = person;
+    }
+    //in thông tin
+      console.log("Tên của bạn là: <B> " + yourname + "</B>");
+      console.log("<BR>"); // Xuống dòng
+      console.log("Tuổi của bạn là:" + age);
+      console.log("<BR>"); // Xuống dòng
+      console.log("Giới tính của bạn là:" + gender);
+      console.log("<BR>"); // Xuống dòng
+      console.log("Địa chỉ của bạn là:" + address);
+      console.log("<BR>"); // Xuống dòng
+      console.log("Lớp học của bạn là:" + classroom);
+      console.log("<br>");
+    
+    </script>
+    <div>
+      <h2>Chương trình quản lý học viên</h2>
+    </div>
+  </body>
+</html>
